@@ -62,15 +62,16 @@ export default function App() {
       <section id="home" className="hero">
         <div className="hero-content">
           <h1 className="hero-title">KAYLEEN MANGUM</h1>
-          <p className="hero-sub">Web developer | designer</p>
+          <p className="hero-sub">Web Developer | App Engineer</p>
           <a href="#projects" className="btn btn-outline">See my work</a>
         </div>
       </section>
  
       <section id="about" className="section">
         <h2>About Me</h2>
-        <p className="lead">Write one or two sentences about me.</p>
-        <p>More details about my background and the kind of work I do.</p>
+        <p className="lead">I have been working on personal projects involving fullstack engineering and working towards my baachelor's degree in Software Engineering for the last two years. I am currently looking for internships or freelance projects to increase my knowledge and experience as I finish my degree.</p>
+        <p>I have spent the last seven years working in various technical support roles - from working on freeze dryers and walking customers through repairing their devices to my most recent position working at Fishbowl and helping to maintain databases for various inventory customers. Over those years, I have learned JavaScript, Python, HTML, CSS, and MySQL, as well as various other softwares and engines like Salesforce, Jira, and NetSuite. This experience has done wonders to help me move ever closer to my goal of working as a fullstack engineer and working on large-scale projects, including building and maintaining information.</p>
+        <p>I would love the opportunity to be able to show what I can do and work with you on either a project to improve my skills or in an intern or junior engineer position - and you'll be able to see from my projects that I am already good at what I do. My goal is to become GREAT!</p>
       </section>
  
       <section id="projects" className="section section-alt">
