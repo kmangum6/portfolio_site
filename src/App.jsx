@@ -10,13 +10,13 @@ const NAV_LINKS = [
  
 const PROJECTS = [
   {
-    title: "Project One",
-    blurb: "A short summary of what you built, who it was for, and the tools you used.",
+    title: "Python Application",
+    blurb: "This app allows you to enter character information for a few famous TTRPGs, such as Dungeons and Dragons, Drawsteel, the Cosmere RPG, and Monster of the Week, with the intention to add more functionality over time. Most of this is currently in a form state - where items can simply be typed in rather than generating information automatically. This will be changed over time as the app is further improved.",
     link: "#",
   },
   {
-    title: "Project Two",
-    blurb: "Describe the problem you solved and the result. Numbers and outcomes help.",
+    title: "Helpdesk Database Demonstration",
+    blurb: "This database uses SQLite and Javascript in order to run a small helpdesk example database with a few test users available. It will automatically delete any changes that have been added once you leave and log back in, but it gives an example of what I can potentially do with databases.",
     link: "#",
   },
 ];
@@ -76,7 +76,7 @@ export default function App() {
  
       <section id="projects" className="section section-alt">
         <h2>Projects</h2>
-        <p className="lead">Things I have built. Short details.</p>
+        <p className="lead">I have worked on two projects so far: a Python-based app for android allowing you to enter character information for TTRPGs, and a HelpDesk SQL database demo.</p>
         <div className="grid">
           {PROJECTS.map((p) => (
             <article key={p.title} className="card">
