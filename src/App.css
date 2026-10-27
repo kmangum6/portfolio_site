@@ -1,0 +1,282 @@
+:root {
+  --green: #1f5130;      
+  --green-dark: #153a22;  
+  --green-tint: #e8efe9;
+  --green-deep: #184427;
+}
+ 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+ 
+html {
+  scroll-behavior: smooth;
+}
+ 
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #000;
+  background: #fff;
+}
+ 
+a {
+  color: inherit;
+}
+ 
+/* NAVIGATION */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+  background: var(--green-deep);
+}
+ 
+.navbar-inner {
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar-inner .nav-item:first-child {
+  margin-right: auto;
+}
+ 
+.nav-item {
+  padding: 16px 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background: none;
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+ 
+.nav-item:hover, .nav-item:focus-visible {
+  background: #fff;
+  color: var(--green-deep);
+}
+ 
+.nav-toggle {
+  margin-left: auto;
+  display: none;
+}
+ 
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.mobile-menu .nav-item {
+  padding: 12px 16px;
+}
+ 
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: var(--green);
+}
+ 
+.hero-title {
+  margin: 0;
+  font-size: clamp(3rem, 12vw, 6rem);
+  letter-spacing: 0.1em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+ 
+.hero-sub {
+  font-size: 1.25rem;
+  margin: 8px 0 24px;
+}
+ 
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  text-decoration: none;
+  cursor: pointer;
+}
+ 
+.btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+ 
+.btn-outline:hover, .btn-outline:focus-visible {
+  background: #fff;
+  color: var(--green);
+}
+ 
+.btn-dark {
+  background: var(--green);
+  color: #fff;
+}
+ 
+.btn-dark:hover, .btn-dark:focus-visible {
+  background: var(--green-dark);
+}
+ 
+/* SECTIONS */
+.section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+ 
+.section h2 {
+  font-size: 2rem;
+  margin: 0 0 16px;
+}
+ 
+.lead {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+ 
+.section-alt {
+  max-width: none;
+  background: var(--green-tint);
+}
+ 
+.section.section-alt > * {
+  max-width: 928px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+ 
+.card {
+  background: #fff;
+  padding: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+}
+ 
+.card h3 {
+  margin-top: 0;
+}
+
+/* CONTACT FORM */
+.contact-form {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 24px;
+  text-align: left;
+  color: #000;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+}
+ 
+.contact-form label {
+  display: block;
+  margin: 16px 0 4px;
+  font-weight: 600;
+}
+ 
+.contact-form label:first-child {
+  margin-top: 0;
+}
+ 
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font: inherit;
+  border: 1px solid #999;
+  background: #fff;
+  color: #000;
+}
+ 
+.contact-form input:focus-visible,
+.contact-form select:focus-visible,
+.contact-form textarea:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 1px;
+}
+ 
+.contact-form .btn {
+  margin-top: 20px;
+  border: 0;
+  font: inherit;
+}
+ 
+.contact-form .btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+ 
+.form-status {
+  min-height: 1.5em;
+  margin: 12px 0 0;
+}
+ 
+/* SPAM TRAP */
+.hp-field {
+  position: absolute;
+  left: -9999px;
+}
+ 
+/* BAND SEGMENT */
+.band {
+  padding: 96px 16px;
+  text-align: center;
+  color: #fff;
+  background: var(--green);
+}
+ 
+.band h2 {
+  margin: 0 0 24px;
+  font-size: clamp(1.75rem, 5vw, 3rem);
+}
+ 
+/* FOOTER */
+.footer {
+  padding: 32px 16px;
+  text-align: center;
+  background: var(--green-dark);
+  color: #fff;
+}
+ 
+.footer p {
+  margin: 0;
+}
+ 
+.footer p + p {
+  margin-top: 8px;
+}
+ 
+.footer .link {
+  margin: 0 12px;
+  color: #fff;
+}
+ 
+/* MOBILE */
+@media (max-width: 600px) {
+  .nav-desktop { display: none; }
+  .nav-toggle { display: block; }
+}
+ 
+@media (min-width: 601px) {
+  .mobile-menu { display: none; }
+}
+ 
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
